@@ -11,10 +11,10 @@
         
         <form action="situacaoServlet" method="POST">
             
-            Aluno: <input type="text" name="aluno" value="<%= request.getParameter("aluno") != null ? request.getParameter("aluno") : "" %>" size="15" maxlength="30"><br>
-            Frequência: <input type="text" name="frequencia" value="<%= request.getAttribute("freq") != null ? request.getAttribute("freq") : "" %>" size="15" maxlength="30"><%= request.getAttribute("erroFreq") != null ? request.getAttribute("erroFreq") : "" %><br>
-            Média normal: <input type="text" name="mediaNormal" value="<%= request.getAttribute("mn") != null ? request.getAttribute("mn") : "" %>" size="15" maxlength="30"><%= request.getAttribute("erroMn") != null ? request.getAttribute("erroMn") : "" %><br>
-            Média final: <input type="text" name="mediaFinal" value="<%= request.getAttribute("mf") != null ? request.getAttribute("mf") : "" %>" size="15" maxlength="30"><%= request.getAttribute("erroMf") != null ? request.getAttribute("erroMf") : "" %><br>
+            Aluno: <input type="text" name="aluno" value="${param.aluno}" size="15" maxlength="30"><br>
+            Frequência: <input type="text" name="frequencia" value="${freq}" size="15" maxlength="30">${erroFreq}<br>
+            Média normal: <input type="text" name="mediaNormal" value="${mn}" size="15" maxlength="30">${erroMn}<br>
+            Média final: <input type="text" name="mediaFinal" value="${mf}" size="15" maxlength="30">${erroMf}<br>
             
             <button type="submit" >Enviar</button>
             

@@ -1,6 +1,8 @@
 <%@page import="java.util.List"%>
 <%@page import="com.mycompany.trabalho2.Aluno"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 
 <!DOCTYPE html>
 <%
